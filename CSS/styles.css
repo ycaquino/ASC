@@ -1,0 +1,97 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+}
+
+p{
+    line-height: 2.5;
+}
+
+/* headings */
+
+.big-heading{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+
+/* title section */
+
+#title .container-fluid{
+    padding: 2% 1% 0 1%;
+}
+
+/* navbar section */
+
+.logo{
+    width:25%;
+}
+
+.nav-item{
+    padding: 0px 18px;
+}
+
+/* carousel section */
+
+.carousel-img{
+    width:100%;
+}
+
+#main-carousel .container-fluid{
+    padding: 3% 0 0 0;
+}
+
+/* about section */
+
+.company-description{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+}
+
+#about{
+    background-color: #efefef;
+}
+
+#about .container-fluid{
+    padding: 7%;
+    line-height: 1.5;
+}
+
+/* pedigree */
+
+#pedigree .container-fluid{
+    padding: 7%;
+}
+
+.certification-row{
+    width:50%;
+    margin:100px auto 100px auto;
+    text-align: left;
+}
+.pedigree-list{
+    overflow: hidden;
+}
+
+.chp-icon{
+    width:25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.pv-icon{
+    width:25%;
+    float:right;
+    margin-left:30px;
+}
+
+/* contact-form section */
+
+#contact-form{
+    background-color: #efefef;
+}
+
+#contact-form .container-fluid{
+    padding: 7%;
+}
