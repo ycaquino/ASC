@@ -43,7 +43,6 @@ p{
     background-color:black;
     padding: 14px 28px;
     font-size: 16px;
-    cursor: pointer;
 }
 
 .carousel-icon:hover{
@@ -57,8 +56,6 @@ p{
 .carousel-control-next-icon{
     margin-left: 50%;
 }
-
-
 
 #main-carousel .container-fluid{
     padding: 3% 0 0 0;
