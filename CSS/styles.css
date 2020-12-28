@@ -1,6 +1,7 @@
 body{
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Roboto',sans-serif;
     text-align: center;
+    color: #140c5b;
 }
 
 p{
@@ -11,7 +12,7 @@ p{
 
 .big-heading{
     font-size: 3.5rem;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 3%;
 }
 
@@ -65,7 +66,7 @@ p{
 
 .company-description{
     text-align: left;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 3%;
 }
