@@ -25,6 +25,31 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
        
+        <!-- Google maps API -->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcm3ATEWHxiXrK0gNw7QHK3KjF6jJN_CA&callback=initMap&libraries=&v=weekly" defer></script>
+        <script src="./index.js"></script>
+
+        <!-- Temporary Map Script -->
+
+        <script>
+          // Initialize and add the map
+          function initMap() {
+            // The location of Uluru
+            const ASC = { lat: 18.214136267410332, lng: -67.15490776876263 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 15,
+              center: ASC,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+              position: ASC,
+              map: map,
+            });
+          }
+        </script>
+
     </head>
 
     <body>
@@ -110,45 +135,54 @@
             </div>
         </section>
 
-        <section id="pedigree">
-            <div class=container-fluid>
-                <h1 class="big-heading"> The Accurate Pedigree</h1>
-                <div class="certifications">
-                    <div class="certification-row">
-                        <img class="chp-icon" src="images/fossil-fuel.png" alt="cogeneration-img">
-                        <h3>Combined Heat and Power</h3>
-                        <ul class="pedigree-list">
-                            <li>
-                                First CHP EPA Partner in PR
-                            </li>
-                            <li>
-                                First CHP Systems in PR
-                            </li>
-                            <li>
-                                First CHP with energy Storage
-                            </li>
-                            <li>
-                                Only CHP that operated during Hurricane Maria
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="certification-row">
-                        <img class="pv-icon" src="images/solar-panel.png" alt="photovoltaic-img">
-                        <h3>Photovoltaics</h3>
-                        <ul class="pedigree-list">
-                            <li>
-                                First PREB PV Installer
-                            </li>
-                            <li>
-                                First PREB PV Designer
-                            </li>
-                            <li>
-                                We design for several independent installers about 4 PV systems per week.
-                            </li>
-                        </ul>
-                    </div>
+        <section id="policy">
+          <div class="container-fluid">
+            <img class="policy-img" src="images/policy-icon.png" alt="policy-img">
+            <h1 class="big-heading">Our Policy</h1>
+            <div class="row">
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title bold">Accurate Service</h5>
+                    <p class="card-text">We are always available to our customers</p>
+                    <p class="card-text">We will address any electrical, control or instrumentation need</p>
+                    <p class="card-text">We shall exceed your expectations</p>
+                  </div>
                 </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title bold">Accurate Technology</h5>
+                    <p class="card-text">Our customers deserve the latest and proven technology. We are not just providing parts, equipment or materials.</p>
+                    <p class="card-text">We are partnering with our Customers to make them more efficient and competitive</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title bold">Accurate Quality</h5>
+                    <p class="card-text">We use only well-recognized, proven and reliable materials</p>
+                    <p class="card-text">Our products are 100% inspected and tested before delivery</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title bold">Accurate Value</h5>
+                    <p class="card-text">We use technology as a mean to provide accurate solutions at the lower cost</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </div>
         </section>
 
         <section id="contact-form">
@@ -171,6 +205,101 @@
                 <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
               </div>
             </form>
+          </div>
+        </section>
+
+        <Section id="location">
+          <div class="row">
+
+            <div class="col-lg-6 location-card">
+              <div class="card">
+                <div>
+                  <div id="map"></div>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title location-card-title">Address</h1>
+                  <div class="card-text">
+                    <address>
+                      105 Calle Jose G. Padilla <br>
+                      Modulo 202C <br>
+                      Mayaguez, PR 00682 <br>
+                      Phone: (787) 833-2658 <br>
+                      Fax: (787) 832-4486
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <caption class="location-caption"><h1>Links</h1></caption>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://electrification.us.abb.com/geindustrialcom">GE Industrial Solutions</a></td>
+                      <td><a href="https://www.ge.com/digital/">GE Control System</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://electrification.us.abb.com/geindustrialcom">Ge Critical Power</a></td>
+                      <td><a href="https://global.abb/group/en">ABB</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.tnb.com/pub/index.php">Thomas Betts</a></td>
+                      <td><a href="https://www.3m.com.pr/3M/en_PR/company-pr/">3M</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.phoenixcontact.com/online/portal/pc">PhoenixContact</a></td>
+                      <td><a href="https://ep-us.mersen.com/">Mersen</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://fein.com/en_us/">Fein</a></td>
+                      <td><a href="http://www.cooperindustries.com/content/public/en.html">Cooper</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.hubbell.com/wiringdevice-kellems/en">Hubbell</a></td>
+                      <td><a href="https://www.bosch-home.es/">Bosh</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://lithonia.acuitybrands.com/">Lithonia</a></td>
+                      <td><a href="https://www.greenlee.com/us/es">GrennLee</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.tslots.com/">TSlots</a></td>
+                      <td><a href="https://www.microsoft.com/es-pr/">Microsoft</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.siemens.com/global/en.html">Siemens</a></td>
+                      <td><a href="https://www.lovatoelectric.es/">Lovato</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.sandc.com/">S&C</a></td>
+                      <td><a href="https://www.hubbell.com/burndy/en">Burndy</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.kleintools.com/">Klein</a></td>
+                      <td><a href="https://www.qualitrolcorp.com/">Qualitrol</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.fujielectric.com/">Fuji</a></td>
+                      <td><a href="https://www.legrand.com.co/">Legrand</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.osram.com/corporate/">Osram</a></td>
+                      <td><a href="https://www.gedore.com/en-de">Gedore</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            </div>
+            
+          </div>
+        </section>
+
+        <section id="end">
+          <div class="footer">
+            <p>© Copyright 2020, Accurate Solutions Corp. All rights are reserved. Terms of Use Privacy Policy</p>
           </div>
         </section>
 

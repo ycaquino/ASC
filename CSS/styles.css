@@ -16,6 +16,12 @@ p{
     margin-bottom: 3%;
 }
 
+/* fonts */
+
+.bold{
+    font-weight: 700;
+}
+
 /* title section */
 
 #title .container-fluid{
@@ -80,31 +86,24 @@ p{
     line-height: 1.5;
 }
 
-/* pedigree */
+/* policy */
 
-#pedigree .container-fluid{
+.card{
+    border:none;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+.policy-img{
+    margin-bottom:5%;
+    width:15%;
+}
+
+#policy .container-fluid{
     padding: 7%;
-}
-
-.certification-row{
-    width:50%;
-    margin:100px auto 100px auto;
-    text-align: left;
-}
-.pedigree-list{
-    overflow: hidden;
-}
-
-.chp-icon{
-    width:25%;
-    float: left;
-    margin-right: 30px;
-}
-
-.pv-icon{
-    width:25%;
-    float:right;
-    margin-left:30px;
+    background-color: #fff;
 }
 
 /* contact-form section */
@@ -115,4 +114,42 @@ p{
 
 #contact-form .container-fluid{
     padding: 7%;
+}
+
+/* location section */
+
+.location-caption{
+    caption-side: top;
+    text-align: center;
+    color: #0a043c;
+    padding:0;
+}
+
+.location-card{
+    margin: auto;
+}
+
+.location-card .card{
+    background-color: #efefef;
+}
+
+.location-card-title{
+    text-align: left;
+}
+
+#location{
+    padding:7%;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
+}
+
+/* footer section */
+
+.footer p{
+    background-color: #efefef;
+    margin: 0;
+    padding: 5%;
 }
