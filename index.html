@@ -33,25 +33,27 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/50d665ad75.js" crossorigin="anonymous"></script>
 
+        <script src="JS/script.js"></script>
+
         <!-- Temporary Map Script -->
 
-        <script>
+        <!-- <script>
           // Initialize and add the map
           function initMap() {
-            // The location of Uluru
+            // The location of ASC
             const ASC = { lat: 18.214136267410332, lng: -67.15490776876263 };
-            // The map, centered at Uluru
+            // The map, centered at ASC
             const map = new google.maps.Map(document.getElementById("map"), {
               zoom: 15,
               center: ASC,
             });
-            // The marker, positioned at Uluru
+            // The marker, positioned at ASC
             const marker = new google.maps.Marker({
               position: ASC,
               map: map,
             });
           }
-        </script>
+        </script> -->
 
     </head>
 
@@ -190,7 +192,7 @@
 
         <section id="contact-form">
           <div class="container-fluid">
-            <form>
+            <form action="https://formspree.io/f/mdoppbbg" method="POST" id="my-form">
               <h1 class="big-heading">Contact Form</h1>
               <div class="form-group">
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name" required>
@@ -207,6 +209,7 @@
               <div class="form-group centered">
                 <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
               </div>
+              <div id="status"></div>
             </form>
           </div>
         </section>
