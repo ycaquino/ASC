@@ -1,11 +1,13 @@
 body{
     font-family: 'Roboto',sans-serif;
-    text-align: center;
     color: #140c5b;
+    line-height: 2;
 }
 
-p{
-    line-height: 2.5;
+/* position */
+
+.centered{
+    text-align: center;
 }
 
 /* headings */
@@ -14,6 +16,7 @@ p{
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 3%;
+    text-align: center;
 }
 
 /* fonts */
@@ -43,25 +46,28 @@ p{
 .carousel-img{
     width:100%;
 }
-
-.carousel-icon{
-    width: 25%;
-    height: 7%;
-    background-color:black;
-    padding: 14px 28px;
-    font-size: 16px;
+.carousel-inner{
+    opacity:0.8;
 }
 
-.carousel-icon:hover{
-    background-color: #0a043c;
+.carousel-control-prev, .carousel-control-next,
+.carousel-control-prev:focus, .carousel-control-next:focus,
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    opacity:1;
+    color:#0a043c;
 }
 
-.carousel-control-prev-icon{
-    margin-right: 50%;
+.carousel-control-span-left{
+    margin-right: 30%;
+
 }
 
-.carousel-control-next-icon{
-    margin-left: 50%;
+.carousel-control-span-right{
+    margin-left: 30%;
+}
+
+a .far{
+    font-size: 7em;
 }
 
 #main-carousel .container-fluid{
@@ -71,7 +77,6 @@ p{
 /* about section */
 
 .company-description{
-    text-align: left;
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 3%;
@@ -83,7 +88,6 @@ p{
 
 #about .container-fluid{
     padding: 7%;
-    line-height: 1.5;
 }
 
 /* policy */
@@ -92,8 +96,8 @@ p{
     border:none;
 }
 
-.card-text{
-    text-align: justify;
+.policy-text{
+    text-align: left;
 }
 
 .policy-img{
@@ -133,10 +137,6 @@ p{
     background-color: #efefef;
 }
 
-.location-card-title{
-    text-align: left;
-}
-
 #location{
     padding:7%;
 }
@@ -152,4 +152,70 @@ p{
     background-color: #efefef;
     margin: 0;
     padding: 5%;
+}
+
+/* medium size devices media query */
+
+@media only screen and (max-width: 1000px){
+    
+    .location-card{
+        margin:5%;
+    }
+
+    a .far{
+        font-size: 4em;
+    }
+
+}
+
+/* small screen devices media query */
+
+@media only screen and (max-width: 576px){
+
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    /* headings */
+
+    .big-heading{
+        font-size: 2.2rem;
+    }
+
+    /* Navbar section */
+
+    .logo{
+        width:60%;
+    }
+
+    .dropdown-menu{
+        text-align: center;
+    }
+
+    .dropdown-item{
+        padding:3%;
+    }
+
+    /* carousel section */
+
+    a .far{
+        font-size: 2em;
+    }
+
+    /* about section */
+
+    .company-description{
+        font-size: 1rem;
+        /* text-align:justify; */
+    }
+
+    .policy-img{
+        width:25%;
+    }
+
+
+
 }
