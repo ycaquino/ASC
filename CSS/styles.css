@@ -104,6 +104,10 @@ body{
     margin-left: 30%;
 }
 
+.slide-button {
+    color: #ff7b54;
+}
+
 a .far{
     font-size: 7em;
 }
