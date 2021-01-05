@@ -1,46 +1,18 @@
 body{
     font-family: 'Roboto',sans-serif;
-    color: #140c5b;
+    color: #0D0359;
     line-height: 2;
 }
 
-#status{
-    text-align: center;
-    width:90%;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
+.partner-logo{
+    width:50%;
+    margin: 20% auto;
 }
 
-#status.submitted{
-    background-color: #61b15a;
-    animation: status 4s ease forwards;
-    color:#fff;
+.special-partner-logo{
+    width:80%;
+    margin: 20% auto;
 }
-
-#status.error{
-    background-color: #f05454;
-    animation: status 4s ease forwards;
-    color:#fff;
-}
-
-@keyframes status{
-    0%{
-        opacity:1;
-        pointer-events:all;
-    }
-
-    90%{
-        opacity:1;
-        pointer-events:all;
-    }
-
-    100%{
-        opacity:0;
-        pointer-events:none;
-    }
-}
-
 
 /* position */
 
@@ -67,6 +39,7 @@ body{
 
 #title .container-fluid{
     padding: 2% 1% 0 1%;
+    background-color: #fff;
 }
 
 /* navbar section */
@@ -77,6 +50,10 @@ body{
 
 .nav-item{
     padding: 0px 18px;
+}
+
+#navbarNavDropdown .navbar-nav{
+    font-size: 1.5rem;
 }
 
 /* carousel section */
@@ -150,12 +127,49 @@ a .far{
 
 /* contact-form section */
 
+#status{
+    text-align: center;
+    width:90%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.submitted{
+    background-color: #61b15a;
+    animation: status 4s ease forwards;
+    color:#fff;
+}
+
+#status.error{
+    background-color: #f05454;
+    animation: status 4s ease forwards;
+    color:#fff;
+}
+
 #contact-form{
     background-color: #efefef;
 }
 
 #contact-form .container-fluid{
     padding: 7%;
+}
+
+@keyframes status{
+    0%{
+        opacity:1;
+        pointer-events:all;
+    }
+
+    90%{
+        opacity:1;
+        pointer-events:all;
+    }
+
+    100%{
+        opacity:0;
+        pointer-events:none;
+    }
 }
 
 /* location section */
@@ -167,12 +181,18 @@ a .far{
     padding:0;
 }
 
-.location-card{
-    margin: auto;
-}
-
 .location-card .card{
     background-color: #efefef;
+    margin-top: 57px;
+}
+
+.table-responsive .table{
+    text-align: center;
+}
+
+.table td,
+.table th{
+    vertical-align: 0;
 }
 
 #location{
@@ -221,10 +241,18 @@ a .far{
         overflow-x: hidden; 
     }
 
+    hr{
+        display: none;
+    }
+
+    .col .centred{
+        display: none;
+    }
+
     /* headings */
 
     .big-heading{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     /* Navbar section */
@@ -250,14 +278,11 @@ a .far{
     /* about section */
 
     .company-description{
-        font-size: 1rem;
-        /* text-align:justify; */
+        font-size: 1.2rem;
     }
 
     .policy-img{
         width:25%;
     }
-
-
 
 }
