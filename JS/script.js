@@ -64,3 +64,15 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     xhr.send(data);
   }
+
+  //load text function 
+
+  jQuery.get('text/intro-p1.txt', function(data) {
+    //First paragraph of main page introduction
+    $('#intro-p1').html(data.replace('n',''));
+ });
+
+ jQuery.get('text/intro-p2.txt', function(data) {
+  //Second paragraph of main page introduction
+  $('#intro-p2').html(data.replace('n',''));
+});
