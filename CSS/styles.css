@@ -1,17 +1,12 @@
 body{
     font-family: 'Roboto',sans-serif;
+    background-color: #ffffff;
     color: #0D0359;
     line-height: 2;
 }
 
-.partner-logo{
-    width:50%;
-    margin: 20% auto;
-}
-
-.special-partner-logo{
-    width:80%;
-    margin: 20% auto;
+hr{
+    border-top: 1px dashed #666666;
 }
 
 /* position */
@@ -195,6 +190,16 @@ a .far{
     vertical-align: 0;
 }
 
+.partner-logo{
+    width:50%;
+    margin: 20% auto;
+}
+
+.special-partner-logo{
+    width:80%;
+    margin: 20% auto;
+}
+
 #location{
     padding:7%;
 }
@@ -215,18 +220,31 @@ a .far{
 /* medium size devices media query */
 
 @media only screen and (max-width: 1000px){
+
+    /* .delete{
+        display:none;
+    } */
     
     .location-card{
         margin:5%;
     }
 
-    a .far{
-        font-size: 4em;
+    /* a .far{
+        font-size: 4em; Size of Carousel buttons
+    } */
+
+    .big-heading{
+        font-size: 2.5rem;
     }
 
-    .dropdown-menu{
-        text-align: center;
+    .policy-img{
+        width:35%;
     }
+
+    .location-card .card{
+        margin-top: 0;
+    }
+
 
 }
 
@@ -241,18 +259,10 @@ a .far{
         overflow-x: hidden; 
     }
 
-    hr{
-        display: none;
-    }
-
-    .col .centred{
-        display: none;
-    }
-
     /* headings */
 
     .big-heading{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     /* Navbar section */
@@ -261,9 +271,13 @@ a .far{
         width:60%;
     }
 
-    .dropdown-menu{
-        text-align: center;
+    /* hr{
+        display: none;
     }
+
+    .col .centred{
+        display: none;
+    } */
 
     .dropdown-item{
         padding:3%;
@@ -271,18 +285,29 @@ a .far{
 
     /* carousel section */
 
-    a .far{
-        font-size: 2em;
-    }
+    /* a .far{
+        font-size: 2em; Size of Carousel buttons 
+    } */
 
     /* about section */
 
     .company-description{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     .policy-img{
-        width:25%;
+        width:50%;
+    }
+
+    /* Location section */
+
+    .partner-logo{
+        width:70%;
+    }
+    
+    .special-partner-logo{
+        width:100%;
     }
 
 }
