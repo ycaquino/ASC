@@ -2,71 +2,65 @@
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
+      <meta charset="utf-8">
 
-        <!-- viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- viewport -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Accurate Solutions</title>
+      <title>Accurate Solutions</title>
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/styles.css">
-        <link rel="icon" href="images/ASC-icon.png">
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="CSS/styles.css">
+      <link rel="icon" href="images/ASC-icon.png">
 
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-        <!-- Bootsrap scripts -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-       
-        <!-- Google maps API -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjSP37Q63Qb2uv05rBJzbLBBwlzq6rHYE&callback=initMap&libraries=&v=weekly" defer></script>
-
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/50d665ad75.js" crossorigin="anonymous"></script>
-
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+      <!-- Bootsrap scripts -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <!-- Google maps API -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjSP37Q63Qb2uv05rBJzbLBBwlzq6rHYE&callback=initMap&libraries=&v=weekly" defer></script>
+      
     </head>
 
     <body>
       <section id="title">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
-                    <div class="logo">
-                        <img class="img-fluid" src="images/ASC-logo.png" alt="logo-img"></a>
-                    </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse centered" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="HTML/products.html">Products</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Solutions
-                      </a>
-                      <div class="dropdown-menu centered" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">CHP</a>
-                        <a class="dropdown-item" href="#">PV</a>
-                        <a class="dropdown-item" href="#">Sheet Metal</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-form">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="/images/ASC-logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/HTML/products.html">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Solutions
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">CHP</a>
+                    <a class="dropdown-item" href="#">PV</a>
+                    <a class="dropdown-item" href="#">Sheet Metal</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/HTML/contactUs.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </section>
 
@@ -114,7 +108,7 @@
       <section id="main-carousel">
         <div class="row">
 
-          <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="col-lg-3 col-md-3 col-sm-6 chp-carousel">
             <div class="container-fluid">
               <div id="carouselExampleControls" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
@@ -129,7 +123,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="col-lg-3 col-md-3 col-sm-6 pv-carousel">
             <div class="container-fluid">
               <div id="carouselExampleControls2" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
@@ -144,7 +138,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="col-lg-3 col-md-3 col-sm-6 delete">
             <div class="container-fluid">
               <div id="carouselExampleControls3" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
@@ -159,7 +153,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="col-lg-3 col-md-3 col-sm-6 delete">
             <div class="container-fluid">
               <div id="carouselExampleControls4" class="carousel slide" data-interval="false">
                 <div class="carousel-inner">
