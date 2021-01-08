@@ -86,16 +86,11 @@ body{
     .delete{
         display:none;
     }
-
-    #contact-info{
-        text-align: center;
-    }
 }
 
 @media only screen and (max-width: 600px){
 
     .team-heading{
-        padding: .25rem;
         font-size: 2rem;
     }
 
@@ -112,7 +107,6 @@ body{
 @media only screen and (max-width: 370px){
 
     .team-heading{
-        padding: .10rem;
         font-size: 1.7rem;
     }
 
