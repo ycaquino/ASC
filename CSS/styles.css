@@ -1,13 +1,6 @@
-body{
-    font-family: 'Roboto',sans-serif;
-    background-color: #ffffff;
-    color: #0D0359;
-    line-height: 2;
-}
-
-hr{
+/* hr{
     border-top: 1px dashed #666666;
-}
+} */
 
 /* position */
 
@@ -30,36 +23,16 @@ hr{
     font-weight: 700;
 }
 
-/* title section */
-
-.navbar-brand{
-    width:60%;
-}
-
-.navbar img{
-    width:50%;
-}
-
-.nav-item,
-.dropdown-item{
-    font-size: 1.5rem;
-    margin: 0 20px;
-}
-
-#title .container-fluid{
-    padding: 2% 1%;
-}
-
 /* carousel section */
 
 .carousel-img{
     width:100%;
 }
-.carousel-inner{
+/* .carousel-inner{
     opacity:0.8;
-}
+} */
 
-.carousel-control-prev, .carousel-control-next,
+/* .carousel-control-prev, .carousel-control-next,
 .carousel-control-prev:focus, .carousel-control-next:focus,
 .carousel-control-prev:hover, .carousel-control-next:hover{
     opacity:1;
@@ -77,7 +50,7 @@ hr{
 
 a .far{
     font-size: 7em;
-}
+} */
 
 #main-carousel .container-fluid{
     padding: 3% 0 0 0;
@@ -116,7 +89,6 @@ a .far{
 
 #policy .container-fluid{
     padding: 7%;
-    background-color: #fff;
 }
 
 /* contact-form section */
@@ -171,7 +143,7 @@ a .far{
 .location-caption{
     caption-side: top;
     text-align: center;
-    color: #0a043c;
+    color:#0D0359;
     padding:0;
 }
 
@@ -208,21 +180,9 @@ a .far{
     width: 100%;
 }
 
-/* footer section */
-
-.footer p{
-    background-color: #efefef;
-    margin: 0;
-    padding: 5%;
-}
-
 /* medium size devices media query */
 
 @media only screen and (max-width: 1000px){
-
-    /* .delete{
-        display:none;
-    } */
     
     .location-card{
         margin:5%;
@@ -239,7 +199,6 @@ a .far{
     .location-card .card{
         margin-top: 0;
     }
-
 
 }
 
@@ -308,20 +267,8 @@ a .far{
 }
 
 @media only screen and (max-width: 1300px){
-    .nav-item,
-    .dropdown-item{
-        font-size: 1rem;
-        margin: 0 10px;
-    }
-
     .big-heading{
         font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 991px){
-    .navbar img{
-        width:90%;
     }
 }
 
@@ -353,17 +300,3 @@ a .far{
         font-size: 1.5rem;
     }
 }
-
-/* @media only screen and (max-width: 750px){
-    h1{
-        font-size: 2rem;
-    }
-
-    .delete{
-        display:none;
-    }
-
-    .col-lg-3{
-        width:50%;
-    }
-} */

@@ -1,0 +1,33 @@
+.navbar-brand{
+    width:60%;
+}
+
+.navbar img{
+    width:50%;
+}
+
+.nav-item,
+.dropdown-item{
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+
+#header .container-fluid{
+    padding: 2% 1%;
+}
+
+/* queries */
+
+@media only screen and (max-width: 1300px){
+    .nav-item,
+    .dropdown-item{
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .navbar img{
+        width:90%;
+    }
+}
