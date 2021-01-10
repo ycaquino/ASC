@@ -12,6 +12,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/products.css">
+    <link rel="stylesheet" href="/CSS/printers & labels.css">
     <link rel="stylesheet" href="/CSS/body-style.css">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
@@ -34,7 +35,7 @@
     <section id="header">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><img src="/images/ASC-logo.png"></a>
+          <a class="navbar-brand" href="/index.html"><img src="/images/ASC-logo.png"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,8 +44,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-1">
+                  <a class="dropdown-item" href="electrical components & software.html">Electrical Components & Software</a>
+                  <a class="dropdown-item" href="tools.html">Tools</a>
+                  <a class="dropdown-item" href="Printers & labels.html">Printers & Labels</a>
+                </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,50 +83,34 @@
 
     <section id="product-table">
       <div class="container-fluid">
-        <img src="/images/Brady-logo.png">
+        <div class="container-fluid">
+          <img id="brand" src="/images/Brady-logo.png">
+        </div>
         <table class="table table-bordered">
           <tbody>
 
             <tr>
-              <td><p></p><img class="product" src="/images/products/Controllers & IO.png" alt="Controllers-&-IO-img"></td>
-              <td><p>Power Management</p><img class="product" src="/images/products/Power Management.png" alt="Power-Management-img"></td>
-              <td><p>Medium Voltage VFDs</p><img class="product" src="/images/products/Medium Voltage VFDs.png" alt="Medium-Voltage-VFDs-img"></td>
+              <td><p>Portable Printers</p><img class="img-fluid" src="/images/Brady/BMP-21-plus.jpg" alt="BMP-21-plus-img"></td>
+              <td><p>Industrial Printers</p><img class="img-fluid" src="/images/Brady/i7100-Industrial-Printer.jpg" alt="i7100-Industrial-Printer-img"></td>
+              <td><p>Sign and Label Printers</p><img class="img-fluid" src="/images/Brady/S3100-Sign-Label-Printer.jpg" alt="S3100-Sign-Label-Printer-img"></td>
             </tr>
 
             <tr>
-              <td><p>Intelligent Production Management</p><img class="product" src="/images/products/Intelligent Production Management.png" alt="Intelligent-Production-Management-img"></td>
-              <td><p>Advanced Programming Enviroment</p><img class="product" src="/images/products/Advanced Programming Enviroment.png" alt="Advanced-Programming-Enviroment-img"></td>
-              <td><p>HMI & SCADA</p><img class="product" src="/images/products/HMI & SCADA.png" alt="HMI-&-SCADA-img"></td>
+              <td><p>Ink Jet Printers</p><img class="img-fluid" src="/images/Brady/J2000-Ink-Jet-Printer.png" alt="J2000-Ink-Jet-Printer-img"></td>
+              <td><p>Laminators</p><img class="img-fluid" src="/images/Brady/BLS1255-Laminator.jpg" alt="BLS1255-Laminator-img"></td>
+              <td><p>Automated Labeling</p><img class="img-fluid" src="/images/Brady/WRAPTOR-A6500-Automated-Labeling.jpg" alt="WRAPTOR-A6500-Automated-Labeling-img"></td>
             </tr>
 
             <tr>
-              <td><p>Valves</p><img class="product" src="/images/products/Valves.png" alt="Valves-img"></td>
-              <td><p>Motion</p><img class="product" src="/images/products/Motion.png" alt="Motion-img"></td>
-              <td><p>Power Controls</p><img class="product" src="/images/products/Power Controls.png" alt="Power-Controls-img"></td>
+              <td><p>Ribbons</p><img class="img-fluid" src="/images/Brady/B30-R10000.jpg" alt="Ribbons-img"></td>
+              <td><p>Ink</p><img class="img-fluid" src="/images/Brady/J20-Ink.jpg" alt="Ink-img"></td>
+              <td><p>Cartriges</p><img class="img-fluid" src="/images/Brady/White-Permasleeve.jpg" alt="White-Permasleeve-img"></td>
             </tr>
 
             <tr>
-              <td><p>OI & PC Control</p><img class="product" src="/images/products/OI & PC Control.png" alt="OI-&-PC-Control-img"></td>
-              <td><p>Industrial Computers(iPC)</p><img class="product" src="/images/products/iPC.png" alt="iPC-img"></td>
-              <td><p>Industrial Ethernet Switch & Converters</p><img class="product" src="/images/products/Ethernet Switch.png" alt="Ethernet-Switch-img"></td>
-            </tr>
-
-            <tr>
-              <td><p>UPS</p><img class="product" src="/images/products/UPS.png" alt="UPS-img"></td>
-              <td><p>VFDs</p><img class="product" src="/images/products/VFD.png" alt="VFDs-img"></td>
-              <td><p>Lighting</p><img class="product" src="/images/products/Lighting.png" alt="Ligthing-img"></td>
-            </tr>
-
-            <tr>
-              <td><p>Extrusions & Machines</p><img class="product" src="/images/products/Extrusions.png" alt="Extrusions-&-Machines-img"></td>
-              <td><p>HVAC & Motor Control Panels</p><img class="product" src="/images/products/HVAC.png" alt="HVAC-&-Motor-Control-Panels-img"></td>
-              <td><p>Electrical Components</p><img class="product" src="/images/products/Electrical Components.png" alt="Electrical-Components-img"></td>
-            </tr>
-
-            <tr>
-              <td><p>Transformers & Filters</p><img class="product" src="/images/products/Transformers.png" alt="Transformers-&-Filters-img"></td>
-              <td><p>Motors & Controls</p><img class="product" src="/images/products/Motors.png" alt="Motors-&-Controls-img"></td>
-              <td><p>Relaying</p><img class="product" src="/images/products/Relaying.png" alt="Relaying-img"></td>
+              <td><p>Software</p><img class="img-fluid" src="/images/Brady/Software.jpg" alt="Software-img"></td>
+              <td><p>Lockout Tagout</p><img class="img-fluid" src="/images/Brady/Lockout-Tagout.jpg" alt="Lockout-Tagout-img"></td>
+              <td><p>Signs</p><img class="img-fluid" src="/images/Brady/Sign.jpg" alt="Sing-img"></td>
             </tr>
 
           </tbody>

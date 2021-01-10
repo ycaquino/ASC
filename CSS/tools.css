@@ -1,0 +1,64 @@
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+/* info section */
+
+#info{
+    padding:7%;
+    font-size:1.5rem;
+    background-color: #efefef;
+}
+
+/* tools section */
+
+.caption{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#tools{
+    padding: 7%;
+    font-size: 1.5rem;
+}
+
+.row{
+    margin-bottom: 7%;
+}
+
+@media only screen and (max-width: 1300px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .description{
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 856px){
+    #info,
+    #tools{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 635px){
+    h1{
+        font-size: 1.7rem;
+    }
+
+    #info,
+    #tools{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 1.5rem;
+    }
+}
