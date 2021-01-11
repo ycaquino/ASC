@@ -52,8 +52,12 @@ a .far{
     font-size: 7em;
 } */
 
-#main-carousel .container-fluid{
+#carousels .container-fluid{
     padding: 3% 0 0 0;
+}
+
+#carousels{
+    overflow-x: hidden;
 }
 
 /* about section */
@@ -212,6 +216,7 @@ a .far{
         padding: 0px;
         overflow-x: hidden; 
     }
+    
 
     /* headings */
 
@@ -265,6 +270,55 @@ a .far{
     }
 
 }
+
+/* @media only screen and (max-width: 2560px) and (max-width: 1752px){
+
+    .big-heading{
+        font-size: 4.5rem;
+    }
+
+    text inside about section 
+    .company-description{
+        font-size:2.2rem;
+    }
+
+    our policy sub-headings (the one below Our Policy big heading) titles
+    .card-body h5{
+        font-size: 2.25rem;
+    }
+
+    text below the our policy sub-headings
+    .card-body p{
+        font-size: 1.75rem;
+    }
+
+    size of placholder text inside contact us form
+    .form-control{
+        font-size:2rem;
+    }
+
+    size of button text on the contact us form
+    .btn-group-lg>.btn, .btn-lg{
+        font-size: 2rem;
+    }
+    
+    margin top of card with company's location
+    .location-card .card{
+        margin-top:75px;
+    }
+    
+    text size of address and distributor heading located on location section
+    .card-body h1,
+    .location-caption h1{
+        font-size:3.5rem
+    }
+
+    text size of company's location, can be found between adress tag in the location section
+    .card-text address{
+        font-size:1.75rem;
+    }
+
+} */
 
 @media only screen and (max-width: 1300px){
     .big-heading{

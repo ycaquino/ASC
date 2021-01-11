@@ -8,6 +8,10 @@
     padding: .75rem;
 }
 
+#contact-info{
+    overflow-x: hidden;
+}
+
 #first-table-entry{
     border-top: none;
 }

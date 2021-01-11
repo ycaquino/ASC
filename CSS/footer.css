@@ -3,3 +3,9 @@
     text-align: center;
     padding: 5%;
 }
+
+/* @media only screen and (max-width: 2560px){
+    #end{
+        font-size:1.75rem;
+    }
+} */
