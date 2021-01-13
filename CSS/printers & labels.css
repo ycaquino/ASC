@@ -2,3 +2,10 @@
     margin-bottom: 5%;
 }
 
+/* queries */
+
+@media only screen and (max-width: 373px){
+    #brand{
+        width:75%;
+    }
+}
