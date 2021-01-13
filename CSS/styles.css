@@ -1,12 +1,18 @@
+/* styling for horizontal rule for second header design  */
+
 /* hr{
     border-top: 1px dashed #666666;
 } */
 
-/* position */
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
+
+/* positions */
 
 .centered{
     text-align: center;
 }
+
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
 /* headings */
 
@@ -17,53 +23,71 @@
     text-align: center;
 }
 
-/* fonts */
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
+
+/* font sizes */
 
 .bold{
     font-weight: 700;
 }
 
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
+
 /* carousel section */
 
 .carousel-img{
-    width:100%;
+    width: 100%;
 }
+
+/* making photos look opaque in order for the buttons to be more visible  */
+
 /* .carousel-inner{
     opacity:0.8;
 } */
+
+/* makes both buttons look the same regardles of which one is being hovered or pressed and makes the buttons clearer than the carousel image in order to make them visible for the user  */
 
 /* .carousel-control-prev, .carousel-control-next,
 .carousel-control-prev:focus, .carousel-control-next:focus,
 .carousel-control-prev:hover, .carousel-control-next:hover{
     opacity:1;
     color:#0a043c;
-}
+} */
 
-.carousel-control-span-left{
+/* positions of carousel buttons */
+
+/* .carousel-control-span-left{
     margin-right: 30%;
 
 }
 
 .carousel-control-span-right{
     margin-left: 30%;
-}
-
-a .far{
-    font-size: 7em;
 } */
 
+/* deletes space between carousels and the left and rigth margin of the page  */
+
 #carousels .container-fluid{
-    padding: 3% 0 0 0;
+    padding: 0;
 }
+
+/* eliminates horizontal scrollbar for smaller screen devices  */
 
 #carousels{
     overflow-x: hidden;
 }
 
+/* size of carousel buttons  */
+
+/* a .far{
+    font-size: 7em;
+}  */
+
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
+
 /* about section */
 
 .company-description{
-    font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 3%;
 }
@@ -76,26 +100,41 @@ a .far{
     padding: 7%;
 }
 
-/* policy */
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
-.card{
-    border:none;
-}
-
-.policy-text{
-    text-align: left;
-}
+/* policy section */
 
 .policy-img{
-    margin-bottom:5%;
-    width:15%;
+    margin-bottom: 5%;
+    width: 15%;
+}
+
+.card{
+    border: none;
+}
+
+#policy .card-title,
+#policy .card-text{
+    text-align: left;
 }
 
 #policy .container-fluid{
     padding: 7%;
 }
 
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
+
 /* contact-form section */
+
+#contact-form{
+    background-color: #efefef;
+}
+
+#contact-form .container-fluid{
+    padding: 7%;
+}
+
+/* styling for the message that appears after submitting contact form, it is only executed the first time the form is filled  */
 
 #status{
     text-align: center;
@@ -117,14 +156,6 @@ a .far{
     color:#fff;
 }
 
-#contact-form{
-    background-color: #efefef;
-}
-
-#contact-form .container-fluid{
-    padding: 7%;
-}
-
 @keyframes status{
     0%{
         opacity:1;
@@ -142,22 +173,20 @@ a .far{
     }
 }
 
-/* location section */
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
-.location-caption{
-    caption-side: top;
-    text-align: center;
-    color:#0D0359;
-    padding:0;
-}
+/* location section */
 
 .location-card .card{
     background-color: #efefef;
     margin-top: 57px;
 }
 
-.table-responsive .table{
+.location-caption{
+    caption-side: top;
     text-align: center;
+    color:#0D0359;
+    padding:0;
 }
 
 .table td,
@@ -184,39 +213,77 @@ a .far{
     width: 100%;
 }
 
-/* medium size devices media query */
+.table-responsive .table{
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
+
+/* queries */
+
+@media only screen and (max-width: 1300px){
+    .big-heading{
+        font-size: 3rem;
+    }
+}
 
 @media only screen and (max-width: 1000px){
-    
-    .location-card{
-        margin:5%;
-    }
 
+    /* carousel section */
+
+    /* Size of Carousel buttons */
     /* a .far{
-        font-size: 4em; Size of Carousel buttons
+        font-size: 4em;
     } */
+
+    /* policy section */
 
     .policy-img{
         width:35%;
     }
 
+}
+
+@media only screen and (max-width: 991px){
+
+    /* location section */
+
+    .location-card{
+        margin:5%;
+    }
+
     .location-card .card{
         margin-top: 0;
     }
-
 }
 
-/* small screen devices media query */
+@media only screen and (max-width: 775px){
+    .big-heading{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    /* makes the third and forth carousel dissapear */
+    .delete{
+        display: none;
+    }
+
+    /* width change so both carousels appear side by side instead of each on a single row */
+    .pv-carousel,
+    .chp-carousel{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 637px){
+    .big-heading{
+        font-size: 2rem;
+    }
+}
 
 @media only screen and (max-width: 576px){
-
-    body{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden; 
-    }
-    
 
     /* headings */
 
@@ -224,7 +291,7 @@ a .far{
         font-size: 1.5rem;
     }
 
-    /* Navbar section */
+    /* header section */
 
     .logo{
         width:60%;
@@ -259,7 +326,7 @@ a .far{
         width:50%;
     }
 
-    /* Location section */
+    /* location section */
 
     .partner-logo{
         width:70%;
@@ -271,86 +338,14 @@ a .far{
 
 }
 
-/* @media only screen and (max-width: 2560px) and (max-width: 1752px){
-
-    .big-heading{
-        font-size: 4.5rem;
-    }
-
-    text inside about section 
-    .company-description{
-        font-size:2.2rem;
-    }
-
-    our policy sub-headings (the one below Our Policy big heading) titles
-    .card-body h5{
-        font-size: 2.25rem;
-    }
-
-    text below the our policy sub-headings
-    .card-body p{
-        font-size: 1.75rem;
-    }
-
-    size of placholder text inside contact us form
-    .form-control{
-        font-size:2rem;
-    }
-
-    size of button text on the contact us form
-    .btn-group-lg>.btn, .btn-lg{
-        font-size: 2rem;
-    }
-    
-    margin top of card with company's location
-    .location-card .card{
-        margin-top:75px;
-    }
-    
-    text size of address and distributor heading located on location section
-    .card-body h1,
-    .location-caption h1{
-        font-size:3.5rem
-    }
-
-    text size of company's location, can be found between adress tag in the location section
-    .card-text address{
-        font-size:1.75rem;
-    }
-
-} */
-
-@media only screen and (max-width: 1300px){
-    .big-heading{
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 775px){
-    .big-heading{
-        font-size: 2.5rem;
-    }
-}
-
-@media only screen and (max-width: 767px){
-    .delete{
-        display: none;
-    }
-
-    .pv-carousel,
-    .chp-carousel{
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 637px){
-    .big-heading{
-        font-size: 2rem;
-    }
-}
-
 @media only screen and (max-width: 509px){
     .big-heading{
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 306px){
+    .big-heading{
+        font-size: 1.2rem;
     }
 }

@@ -69,10 +69,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
   jQuery.get('/Text/intro-p1.txt', function(data) {
     //First paragraph of main page introduction
-    $('#intro-p1').html(data.replace('n',''));
+    $('#intro-p1').html(data.replace('',''));
  });
 
  jQuery.get('/Text/intro-p2.txt', function(data) {
   //Second paragraph of main page introduction
-  $('#intro-p2').html(data.replace('n',''));
+  $('#intro-p2').html(data.replace('',''));
 });
