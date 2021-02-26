@@ -17,7 +17,7 @@
 /* headings */
 
 .big-heading{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3%;
     text-align: center;
@@ -87,9 +87,14 @@
 
 /* about section */
 
+* {
+    box-sizing: border-box;
+ }
+
 .company-description{
     font-size: 1.2rem;
     margin-bottom: 3%;
+    
 }
 
 #about{
@@ -99,6 +104,40 @@
 #about .container-fluid{
     padding: 7%;
 }
+
+.specialRow{
+    height: 20%;
+}
+
+.distributor {
+    float: left;
+    width: 12.2%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .specialD {
+    float: left;
+    width: 31%;
+    height: 25%;
+    padding: 5px;
+    margin: 6px;
+    text-align: center;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  
 
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
@@ -195,13 +234,14 @@
 }
 
 .partner-logo{
-    width:50%;
-    margin: 20% auto;
+    width:100%;
+    height: 100%;
+    
 }
 
 .special-partner-logo{
     width:80%;
-    margin: 20% auto;
+    
 }
 
 #location{
@@ -329,11 +369,18 @@
     /* location section */
 
     .partner-logo{
-        width:70%;
+        width:100%;
+        height: 100%;
     }
     
+    .partner-logo-ge{
+        width:80%;
+        height: 80%;
+    }
+
     .special-partner-logo{
         width:100%;
+        height: 100%;
     }
 
 }
