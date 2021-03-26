@@ -197,6 +197,10 @@
       margin-left: 2%;
   }
 
+  .beckwithImg{
+      margin-top: 15%;
+  }
+
   /* .row::after {
     content: "";
     clear: both;
@@ -382,7 +386,7 @@
     }
 }
 
-@media only screen and (max-width: 1777px){
+/* @media only screen and (max-width: 1777px){
     .company-description{
         font-size: 1.2rem;
     }
@@ -390,7 +394,7 @@
     .big-heading{
         font-size: 3rem;
     }
-}
+} */
 
 @media only screen and (max-width: 1585px){
     .company-description{
