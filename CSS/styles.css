@@ -34,9 +34,13 @@
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
 /* carousel section */
+#carousels{
+    overflow-y: hidden;
+}
 
 .carousel-img{
     width: 100%;
+    /* height: 144px; */
 }
 
 /* making photos look opaque in order for the buttons to be more visible  */
@@ -88,9 +92,14 @@
     width: 20%;
 }
 
+.row{
+    margin-left: 7px;
+}
+
 .image__img {
     display: block;
     width: 100%;
+    height: 96%;
 }
 
 .image__overlay {
@@ -165,21 +174,30 @@
 
 .distributor {
     float: left;
-    width: 12.2%;
+    width: 15.2%;
     padding: 5px;
     text-align: center;
+    
   }
 
   .specialD {
     float: left;
-    width: 31%;
-    height: 25%;
-    padding: 5px;
-    margin: 6px;
+    width: 19%;
+    height: 15%;
+    padding: 0px;
+    /* margin: 6px; */
     text-align: center;
   }
 
-  .row::after {
+  .emersonImage{
+      margin-left: 15%;
+  }
+
+  .geImage{
+      margin-left: 2%;
+  }
+
+  /* .row::after {
     content: "";
     clear: both;
     display: table;
@@ -189,7 +207,7 @@
   .item1 {
     grid-row-start: 1;
     grid-row-end: 3;
-  }
+  } */
 
   
 
@@ -324,15 +342,153 @@
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 /* queries */
 
+@media only screen and (max-width: 3840px){
+    .company-description{
+        font-size: 2.8rem;
+    }
+
+    .big-heading{
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 3825px){
+    .company-description{
+        font-size: 3rem;
+    }
+
+    .big-heading{
+        font-size: 4rem;
+    }
+
+    .specialD{
+        width: 33%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 3669px){
+    .company-description{
+        font-size: 2.5rem;
+    }
+
+    .big-heading{
+        font-size: 4rem;
+    }
+
+    .specialD{
+        width: 33%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 1585px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 29%;
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+
+    .big-heading{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1445px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 23%;
+        height: 16%;
+        margin-left: 8%;
+        margin-top: 1%;
+    }
+
+    .distributor{
+        width: 16.2%;
+        margin-top: 1%;
+    }
+
+    .big-heading{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 23%;
+        height: 16%;
+        margin-left: 8%;
+    }
+
+    .distributor{
+        width: 16.2%;
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 1425px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 23%;
+        height: 16%;
+        margin-left: 8%;
+    }
+
+    .distributor{
+        width: 15.2%;
+        margin-top: 1%;
+    }
+}
+
 @media only screen and (max-width: 1300px){
     .big-heading{
         font-size: 3rem;
     }
 }
 
+@media only screen and (max-width: 1297px){
+    .company-description{
+        font-size: 0.9rem;
+    }
+
+    .big-heading{
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .image__description {
+        font-size: 0.75em;
+    }
+}
+
 @media only screen and (max-width: 1280px){
     .image__description {
         font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1204px){
+    .specialD{
+        margin-top: 5%;
+    }
+
+    .big-heading{
+        font-size: 2rem;
     }
 }
 
@@ -353,28 +509,137 @@
 
 }
 
+@media only screen and (max-width: 1057px){
+
+
+    .specialD{
+        width: 25%;
+    }
+
+    .distributor{
+        width: 16.5%;
+    }
+
+}
+
 @media only screen and (max-width: 991px){
 
     /* location section */
 
-    .location-card{
-        margin:5%;
+    .pequenoD{
+        width: 50%;
     }
 
-    .location-card .card{
-        margin-top: 0;
-    }
+    .distributor{
+      width: 16%;
+  }
+
+    .specialD{
+      width: 25%;
+  }
 }
 
-@media only screen and (max-width: 1280px){
-    .image__description {
-        font-size: 0.75em;
+@media only screen and (max-width: 988px){
+
+    /* location section */
+
+    .pequenoD{
+        width: 50%;
     }
+
+    .distributor{
+      width: 16.5%;
+  }
+
+    .specialD{
+      width: 25%;
+  }
+
+  .big-heading{
+      font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 896px){
+
+    /* location section */
+
+    .pequenoD{
+        width: 50%;
+    }
+
+    .distributor{
+      width: 20.5%;
+      margin-left: 4%;
+  }
+
+    .specialD{
+      width: 23%;
+  }
+
+  .big-heading{
+      font-size: 1.8rem;
+  }
+
+  .image__description {
+    font-size: 0.8em;
+}
+
+}
+
+@media only screen and (max-width: 834px){
+
+    /* location section */
+
+    .company-description{
+        font-size: 0.8rem;
+    }
+
+    .distributor{
+        width: 22%;
+        margin-left: 2%;
+    }
+
+    .specialD{
+        width: 23%;
+    }
+
+    /* .deleteD{
+        display: none;
+    } */
+}
+
+@media only screen and (max-width: 812px){
+
+    /* location section */
+
+    .company-description{
+        font-size: 0.8rem;
+    }
+
+    .distributor{
+        width: 23%;
+        margin-left: 1%;
+    }
+
+    .specialD{
+        width: 25%;
+        margin-left: 6%;
+
+    }
+
+    /* .deleteD{
+        display: none;
+    } */
 }
 
 @media only screen and (max-width: 775px){
     .big-heading{
         font-size: 2.5rem;
+    }
+
+    .specialD{
+        width: 25%;
     }
 }
 
@@ -389,6 +654,51 @@
 
     .image{
         width: 50%;
+    }
+
+    /* .big-heading{
+        font-size: 2rem;
+    } */
+
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .hijo{
+        padding-bottom: 0px;
+    }
+
+    /* .bye{
+        display: none;
+    } */
+
+    .pequenoD{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        padding: 0% 5% 0% 8%;
+    }
+
+    .hijo{
+        padding-bottom: 0px;
+    }
+
+    .specialD{
+        margin: auto;
+        /* padding: 15px; */
+        width: 29%;
+        margin-left: 3%;
+        
+    }
+
+    .geImage{
+        margin-right: -1%;
+        /* padding-right: 54%; */
+    }
+
+    .distributor{
+        width: 17%;
+        margin-left: -1%;
     }
 }
 
@@ -459,6 +769,71 @@
     }
 
 }
+
+@media only screen and (max-width: 559px){
+   /* makes the third and forth carousel dissapear */
+   /* .delete{
+    display: none;
+} */
+
+/* width change so both carousels appear side by side instead of each on a single row */
+
+.image{
+    width: 50%;
+}
+
+/* .big-heading{
+    font-size: 2rem;
+} */
+
+.company-description{
+    font-size: 1rem;
+}
+
+.hijo{
+    padding-bottom: 0px;
+}
+
+/* .bye{
+    display: none;
+} */
+
+.pequenoD{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding: 0% 5% 0% 8%;
+}
+
+.hijo{
+    padding-bottom: 0px;
+}
+
+.specialD{
+    margin: auto;
+    /* padding: 15px; */
+    width: 26%;
+    margin-left: 5%;
+    
+}
+
+.geImage{
+    margin-right: -1%;
+    /* padding-right: 54%; */
+}
+
+.distributor{
+    width: 17%;
+    margin-left: -1%;
+}
+}
+
+@media only screen and (max-width: 637px){
+.big-heading{
+    font-size: 2rem;
+}
+}
+
 
 @media only screen and (max-width: 509px){
     .big-heading{
