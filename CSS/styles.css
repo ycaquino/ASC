@@ -342,7 +342,7 @@
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 /* queries */
 
-@media only screen and (max-width: 3840px){
+/* @media only screen and (max-width: 3840px){
     .company-description{
         font-size: 2.8rem;
     }
@@ -365,15 +365,15 @@
         width: 33%;
         margin-top: 10%;
     }
-}
+} */
 
 @media only screen and (max-width: 3669px){
     .company-description{
-        font-size: 2.5rem;
+        font-size: 1.2rem;
     }
 
     .big-heading{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .specialD{
