@@ -1,6 +1,7 @@
 h1{
     font-size: 3.5rem;
     font-weight: 700;
+    margin-bottom: 3%;
 }
 
 /* info section */
@@ -16,6 +17,7 @@ h1{
 #product-table{
     padding:7%;
     text-align: center;
+    padding-top: 2%;
 }
 
 /* queries */

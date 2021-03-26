@@ -17,7 +17,7 @@
 /* headings */
 
 .big-heading{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3%;
     text-align: center;
@@ -34,9 +34,13 @@
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
 /* carousel section */
+#carousels{
+    overflow-y: hidden;
+}
 
 .carousel-img{
     width: 100%;
+    /* height: 144px; */
 }
 
 /* making photos look opaque in order for the buttons to be more visible  */
@@ -83,22 +87,129 @@
     font-size: 7em;
 }  */
 
+.image {
+    position: relative;
+    width: 20%;
+}
+
+.row{
+    margin-left: 7px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+    height: 96%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #0D0359;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    text-align: center;
+    margin: auto;
+}
+
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
 /* about section */
 
+* {
+    box-sizing: border-box;
+ }
+
 .company-description{
     font-size: 1.2rem;
     margin-bottom: 3%;
+    
 }
 
 #about{
-    background-color: #efefef;
+    background-color: #fff;
 }
 
 #about .container-fluid{
     padding: 7%;
 }
+
+.specialRow{
+    height: 20%;
+}
+
+.distributor {
+    float: left;
+    width: 15.2%;
+    padding: 5px;
+    text-align: center;
+    
+  }
+
+  .specialD {
+    float: left;
+    width: 19%;
+    height: 15%;
+    padding: 0px;
+    /* margin: 6px; */
+    text-align: center;
+  }
+
+  .emersonImage{
+      margin-left: 15%;
+  }
+
+  .geImage{
+      margin-left: 2%;
+  }
+
+  /* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  } */
+
+  
 
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
 
@@ -120,6 +231,14 @@
 
 #policy .container-fluid{
     padding: 7%;
+}
+
+#policy{
+    background-color: #efefef;
+}
+
+#policy .card{
+    background-color: #efefef;
 }
 
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
@@ -177,9 +296,10 @@
 
 /* location section */
 
-.location-card .card{
+#location .card{
+    width:75%;
+    margin:auto;
     background-color: #efefef;
-    margin-top: 57px;
 }
 
 .location-caption{
@@ -195,17 +315,19 @@
 }
 
 .partner-logo{
-    width:50%;
-    margin: 20% auto;
+    width:100%;
+    height: 100%;
+    
 }
 
 .special-partner-logo{
     width:80%;
-    margin: 20% auto;
+    
 }
 
 #location{
     padding:7%;
+    background-color: #fff;
 }
 
 #map{
@@ -218,12 +340,155 @@
 }
 
 /* ---------------------------------------------------------------------------- NEW SECTION --------------------------------------------------------------------------------------------------- */
-
 /* queries */
+
+@media only screen and (max-width: 3840px){
+    .company-description{
+        font-size: 2.8rem;
+    }
+
+    .big-heading{
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 3825px){
+    .company-description{
+        font-size: 3rem;
+    }
+
+    .big-heading{
+        font-size: 4rem;
+    }
+
+    .specialD{
+        width: 33%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 3669px){
+    .company-description{
+        font-size: 2.5rem;
+    }
+
+    .big-heading{
+        font-size: 4rem;
+    }
+
+    .specialD{
+        width: 33%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 1585px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 29%;
+        margin-left: 3%;
+        margin-top: 1%;
+    }
+
+    .big-heading{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1445px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 23%;
+        height: 16%;
+        margin-left: 8%;
+        margin-top: 1%;
+    }
+
+    .distributor{
+        width: 16.2%;
+        margin-top: 1%;
+    }
+
+    .big-heading{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1440px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 23%;
+        height: 16%;
+        margin-left: 8%;
+    }
+
+    .distributor{
+        width: 16.2%;
+        margin-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 1425px){
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .specialD{
+        width: 23%;
+        height: 16%;
+        margin-left: 8%;
+    }
+
+    .distributor{
+        width: 15.2%;
+        margin-top: 1%;
+    }
+}
 
 @media only screen and (max-width: 1300px){
     .big-heading{
         font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1297px){
+    .company-description{
+        font-size: 0.9rem;
+    }
+
+    .big-heading{
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .image__description {
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .image__description {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1204px){
+    .specialD{
+        margin-top: 5%;
+    }
+
+    .big-heading{
+        font-size: 2rem;
     }
 }
 
@@ -244,22 +509,137 @@
 
 }
 
+@media only screen and (max-width: 1057px){
+
+
+    .specialD{
+        width: 25%;
+    }
+
+    .distributor{
+        width: 16.5%;
+    }
+
+}
+
 @media only screen and (max-width: 991px){
 
     /* location section */
 
-    .location-card{
-        margin:5%;
+    .pequenoD{
+        width: 50%;
     }
 
-    .location-card .card{
-        margin-top: 0;
+    .distributor{
+      width: 16%;
+  }
+
+    .specialD{
+      width: 25%;
+  }
+}
+
+@media only screen and (max-width: 988px){
+
+    /* location section */
+
+    .pequenoD{
+        width: 50%;
     }
+
+    .distributor{
+      width: 16.5%;
+  }
+
+    .specialD{
+      width: 25%;
+  }
+
+  .big-heading{
+      font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 896px){
+
+    /* location section */
+
+    .pequenoD{
+        width: 50%;
+    }
+
+    .distributor{
+      width: 20.5%;
+      margin-left: 4%;
+  }
+
+    .specialD{
+      width: 23%;
+  }
+
+  .big-heading{
+      font-size: 1.8rem;
+  }
+
+  .image__description {
+    font-size: 0.8em;
+}
+
+}
+
+@media only screen and (max-width: 834px){
+
+    /* location section */
+
+    .company-description{
+        font-size: 0.8rem;
+    }
+
+    .distributor{
+        width: 22%;
+        margin-left: 2%;
+    }
+
+    .specialD{
+        width: 23%;
+    }
+
+    /* .deleteD{
+        display: none;
+    } */
+}
+
+@media only screen and (max-width: 812px){
+
+    /* location section */
+
+    .company-description{
+        font-size: 0.8rem;
+    }
+
+    .distributor{
+        width: 23%;
+        margin-left: 1%;
+    }
+
+    .specialD{
+        width: 25%;
+        margin-left: 6%;
+
+    }
+
+    /* .deleteD{
+        display: none;
+    } */
 }
 
 @media only screen and (max-width: 775px){
     .big-heading{
         font-size: 2.5rem;
+    }
+
+    .specialD{
+        width: 25%;
     }
 }
 
@@ -271,9 +651,54 @@
     }
 
     /* width change so both carousels appear side by side instead of each on a single row */
-    .pv-carousel,
-    .chp-carousel{
+
+    .image{
         width: 50%;
+    }
+
+    /* .big-heading{
+        font-size: 2rem;
+    } */
+
+    .company-description{
+        font-size: 1rem;
+    }
+
+    .hijo{
+        padding-bottom: 0px;
+    }
+
+    /* .bye{
+        display: none;
+    } */
+
+    .pequenoD{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        padding: 0% 5% 0% 8%;
+    }
+
+    .hijo{
+        padding-bottom: 0px;
+    }
+
+    .specialD{
+        margin: auto;
+        /* padding: 15px; */
+        width: 29%;
+        margin-left: 3%;
+        
+    }
+
+    .geImage{
+        margin-right: -1%;
+        /* padding-right: 54%; */
+    }
+
+    .distributor{
+        width: 17%;
+        margin-left: -1%;
     }
 }
 
@@ -329,14 +754,86 @@
     /* location section */
 
     .partner-logo{
-        width:70%;
+        width:100%;
+        height: 100%;
     }
     
+    .partner-logo-ge{
+        width:80%;
+        height: 80%;
+    }
+
     .special-partner-logo{
         width:100%;
+        height: 100%;
     }
 
 }
+
+@media only screen and (max-width: 559px){
+   /* makes the third and forth carousel dissapear */
+   /* .delete{
+    display: none;
+} */
+
+/* width change so both carousels appear side by side instead of each on a single row */
+
+.image{
+    width: 50%;
+}
+
+/* .big-heading{
+    font-size: 2rem;
+} */
+
+.company-description{
+    font-size: 1rem;
+}
+
+.hijo{
+    padding-bottom: 0px;
+}
+
+/* .bye{
+    display: none;
+} */
+
+.pequenoD{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding: 0% 5% 0% 8%;
+}
+
+.hijo{
+    padding-bottom: 0px;
+}
+
+.specialD{
+    margin: auto;
+    /* padding: 15px; */
+    width: 26%;
+    margin-left: 5%;
+    
+}
+
+.geImage{
+    margin-right: -1%;
+    /* padding-right: 54%; */
+}
+
+.distributor{
+    width: 17%;
+    margin-left: -1%;
+}
+}
+
+@media only screen and (max-width: 637px){
+.big-heading{
+    font-size: 2rem;
+}
+}
+
 
 @media only screen and (max-width: 509px){
     .big-heading{
